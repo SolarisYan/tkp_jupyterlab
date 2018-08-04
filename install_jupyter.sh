@@ -12,6 +12,7 @@ jupyter labextension install jupyterlab_monaco > /dev/null 2>&1 || echo "Extensi
 jupyter labextension install @jupyterlab/plotly-extension > /dev/null 2>&1 || echo "Extension failed to install: @jupyterlab/plotly-extension"
 # jupyter labextension install plotlywidget > /dev/null 2>&1 || echo "Extension failed to install: @jupyterlab/plotly-extension"
 jupyter labextension install jupyterlab_bokeh > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_bokeh"
+jupyter labextension install pylantern > /dev/null 2>&1 || echo "Extension failed to install: pylantern"
 jupyter labextension install bqplot > /dev/null 2>&1 || echo "Extension failed to install: bqplot"
 jupyter labextension install qgrid > /dev/null 2>&1 || echo "Extension failed to install: qgrid"
 jupyter labextension install @oriolmirosa/jupyterlab_materialdarker > /dev/null 2>&1 || echo "Extension failed to install: @oriolmirosa/jupyterlab_materialdarker"
