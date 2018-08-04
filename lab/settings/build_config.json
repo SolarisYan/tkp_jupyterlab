@@ -1,0 +1,7 @@
+{
+    "local_extensions": {
+        "@jupyterlab/toc": "/Users/timkpaine/Programs/projects/jupyterlab_toc",
+        "@mflevine/jupyterlab_html": "/Users/timkpaine/Programs/projects/jupyterlab_html",
+        "jupyterlab-monaco": "/Users/timkpaine/Programs/projects/jupyterlab_monaco"
+    }
+}
