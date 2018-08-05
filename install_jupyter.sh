@@ -2,6 +2,7 @@
 export NODE_OPTIONS=--max-old-space-size=32768
 jupyter labextension install @jupyter-widgets/jupyterlab-manager > /dev/null 2>&1 || echo "Extension failed to install:  @jupyter-widgets/jupyterlab-manager"
 jupyter labextension install jupyterlab_toc > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_toc"
+jupyter labextension install nbdime-jupyterlab > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_toc"
 jupyter labextension install jupyterlab_iframe > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_iframe"
 jupyter labextension install jupyterlab_html > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_html"
 jupyter labextension install jupyterlab_commands > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_commands"
