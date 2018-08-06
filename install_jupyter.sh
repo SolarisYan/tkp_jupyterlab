@@ -18,3 +18,9 @@ jupyter labextension install bqplot > /dev/null 2>&1 || echo "Extension failed t
 jupyter labextension install qgrid > /dev/null 2>&1 || echo "Extension failed to install: qgrid"
 jupyter labextension install @oriolmirosa/jupyterlab_materialdarker > /dev/null 2>&1 || echo "Extension failed to install: @oriolmirosa/jupyterlab_materialdarker"
 jupyter labextension install @jpmorganchase/perspective-jupyterlab > /dev/null 2>&1 || echo "Extension failed to install: @jpmorganchase/perspective-jupyterlab"
+
+
+jupyter serverextension enable --py nbdime
+jupyter serverextension enable --py jupyterlab_iframe
+jupyter serverextension enable --py jupyterlab_templates
+jupyter serverextension enable --py jupyterlab_commands
