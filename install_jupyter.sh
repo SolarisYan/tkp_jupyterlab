@@ -25,3 +25,4 @@ jupyter serverextension enable --py nbdime
 jupyter serverextension enable --py jupyterlab_iframe
 jupyter serverextension enable --py jupyterlab_templates
 jupyter serverextension enable --py jupyterlab_commands
+jupyter serverextension enable --py nbresuse
