@@ -54,7 +54,7 @@
         "@jupyterlab/notebook": "^0.17.2",
         "@jupyterlab/notebook-extension": "^0.17.2",
         "@jupyterlab/observables": "^2.0.2",
-        "@jupyterlab/outputarea": "^0.17.2",
+        "@jupyterlab/outputarea": "^0.17.3",
         "@jupyterlab/pdf-extension": "^0.8.2",
         "@jupyterlab/rendermime": "^0.17.3",
         "@jupyterlab/rendermime-extension": "^0.11.2",
@@ -102,20 +102,17 @@
         "semver": "^5.5.0",
         "url-parse": "~1.1.9",
         "xterm": "~3.3.0",
-        "@jupyterlab/plotly-extension": "file:../extensions/jupyterlab-plotly-extension-0.17.0.tgz",
-        "jupyterlab_iframe": "file:../extensions/jupyterlab_iframe-0.1.5.tgz",
-        "bqplot": "file:../extensions/bqplot-0.4.0.tgz",
-        "qgrid": "file:../extensions/qgrid-1.1.1.tgz",
-        "pylantern": "file:../extensions/pylantern-0.0.6.tgz",
-        "@mflevine/jupyterlab_html": "file:../extensions/mflevine-jupyterlab_html-0.1.4-48a2fe6abaf75aa92ac932bf441cd97308c1fff0.tgz",
-        "jupyterlab-monaco": "file:../extensions/jupyterlab-monaco-0.1.0-a8daac40457ed2b50e8f3463d1fa82bb758e6918.tgz",
-        "@jupyter-widgets/jupyterlab-manager": "file:../extensions/jupyter-widgets-jupyterlab-manager-0.36.0.tgz",
-        "@jupyterlab/toc": "file:../extensions/jupyterlab-toc-0.3.1-47b7a79d9a040e70640845bc35fe0c5c3f530b85.tgz",
+        "ipyvolume": "file:../extensions/ipyvolume-0.4.6.tgz",
+        "nbdime-jupyterlab": "file:../extensions/nbdime-jupyterlab-0.4.0.tgz",
+        "jupyterlab_email": "file:../extensions/jupyterlab_email-0.0.3-30d35791c6ff1fd8f172919ebd71993727f3a7f7.tgz",
+        "@jupyter-widgets/jupyterlab-manager": "file:../extensions/jupyter-widgets-jupyterlab-manager-0.36.1.tgz",
+        "@jupyterlab/statusbar": "file:../extensions/jupyterlab-statusbar-0.3.0.tgz",
+        "@jupyterlab/toc": "file:../extensions/jupyterlab-toc-0.3.1.tgz",
         "@jpmorganchase/perspective-jupyterlab": "file:../extensions/jpmorganchase-perspective-jupyterlab-0.1.18.tgz",
-        "@oriolmirosa/jupyterlab_materialdarker": "file:../extensions/oriolmirosa-jupyterlab_materialdarker-0.3.2.tgz",
-        "jupyterlab_templates": "file:../extensions/jupyterlab_templates-0.1.8.tgz",
-        "jupyterlab_bokeh": "file:../extensions/jupyterlab_bokeh-0.6.0.tgz",
-        "jupyterlab_commands": "file:../extensions/jupyterlab_commands-0.0.2.tgz"
+        "jupyter-leaflet": "file:../extensions/jupyter-leaflet-0.9.0.tgz",
+        "jupyter-threejs": "file:../extensions/jupyter-threejs-1.1.0.tgz",
+        "jupyterlab_voyager": "file:../extensions/jupyterlab_voyager-0.2.0-2ff941f32afd552de31c22f3c1ebfc301f00d781.tgz",
+        "jupyterlab_templates": "file:../extensions/jupyterlab_templates-0.1.11-fa6216f0fcaeac785e17634b7d931176a08928c8.tgz"
     },
     "devDependencies": {
         "@jupyterlab/buildutils": "^0.8.2",
@@ -167,17 +164,16 @@
             "@jupyterlab/theme-dark-extension": "",
             "@jupyterlab/theme-light-extension": "",
             "@jupyterlab/tooltip-extension": "",
-            "jupyterlab_iframe": "",
-            "bqplot": "src/jupyterlab-plugin",
-            "qgrid": "src/jupyterlab-plugin",
-            "pylantern": "",
-            "jupyterlab-monaco": "",
+            "ipyvolume": "src/labplugin",
+            "nbdime-jupyterlab": "",
+            "jupyterlab_email": "",
             "@jupyter-widgets/jupyterlab-manager": "",
+            "@jupyterlab/statusbar": "",
             "@jupyterlab/toc": "lib/extension.js",
-            "@oriolmirosa/jupyterlab_materialdarker": "",
-            "jupyterlab_templates": "",
-            "jupyterlab_bokeh": "",
-            "jupyterlab_commands": ""
+            "jupyter-leaflet": "src/jupyterlab-plugin",
+            "jupyter-threejs": "src/jupyterlab-plugin",
+            "jupyterlab_voyager": "",
+            "jupyterlab_templates": ""
         },
         "mimeExtensions": {
             "@jupyterlab/javascript-extension": "",
@@ -186,8 +182,6 @@
             "@jupyterlab/pdf-extension": "",
             "@jupyterlab/vdom-extension": "",
             "@jupyterlab/vega4-extension": "",
-            "@jupyterlab/plotly-extension": "",
-            "@mflevine/jupyterlab_html": "",
             "@jpmorganchase/perspective-jupyterlab": ""
         },
         "name": "JupyterLab",
@@ -243,11 +237,10 @@
             "url-parse",
             "xterm"
         ],
-        "version": "0.33.6",
+        "version": "0.33.7",
         "linkedPackages": {
-            "@jupyterlab/toc": "/Users/timkpaine/Programs/projects/jupyterlab_toc",
-            "@mflevine/jupyterlab_html": "/Users/timkpaine/Programs/projects/jupyterlab_html",
-            "jupyterlab-monaco": "/Users/timkpaine/Programs/projects/jupyterlab_monaco"
+            "jupyterlab_templates": "/Users/theocean154/Programs/projects/jupyterlab_templates",
+            "jupyterlab_email": "/Users/theocean154/Programs/projects/jupyterlab_email"
         },
         "staticDir": "../static"
     }
