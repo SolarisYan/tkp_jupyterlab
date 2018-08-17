@@ -1,0 +1,16 @@
+bokeh
+bqplot
+ipyleaflet
+ipyvolume
+jupyterlab
+jupyterlab_commands
+jupyterlab_email
+jupyterlab_iframe
+jupyterlab_templates
+nbdime
+nbresuse
+perspective-python
+plotly
+pylantern
+pythreejs
+qgrid
