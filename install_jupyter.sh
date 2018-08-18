@@ -24,6 +24,7 @@ jupyter labextension install jupyter-leaflet > /dev/null 2>&1 || echo "Extension
 jupyter labextension install @jupyter-widgets/jupyterlab-sidecar > /dev/null 2>&1 || echo "Extension failed to install: @jupyter-widgets/jupyterlab-sidecar"
 jupyter labextension install @oriolmirosa/jupyterlab_materialdarker > /dev/null 2>&1 || echo "Extension failed to install: @oriolmirosa/jupyterlab_materialdarker"
 jupyter labextension install @jpmorganchase/perspective-jupyterlab > /dev/null 2>&1 || echo "Extension failed to install: @jpmorganchase/perspective-jupyterlab"
+jupyter labextension install beakerx-jupyterlab
 
 
 jupyter serverextension enable --py nbdime

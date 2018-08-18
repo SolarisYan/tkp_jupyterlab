@@ -1,3 +1,4 @@
+beakerx
 bokeh
 bqplot
 ipyleaflet
