@@ -13,7 +13,7 @@ jupyter labextension install jupyterlab-drawio > /dev/null 2>&1 || echo "Extensi
 jupyter labextension install jupyterlab_voyager > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_voyager"
 jupyter labextension install jupyterlab-monaco > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_monaco"
 jupyter labextension install @jupyterlab/plotly-extension > /dev/null 2>&1 || echo "Extension failed to install: @jupyterlab/plotly-extension"
-# jupyter labextension install plotlywidget > /dev/null 2>&1 || echo "Extension failed to install: @jupyterlab/plotly-extension"
+jupyter labextension install plotlywidget > /dev/null 2>&1 || echo "Extension failed to install: @jupyterlab/plotly-extension"
 jupyter labextension install jupyterlab_bokeh > /dev/null 2>&1 || echo "Extension failed to install: jupyterlab_bokeh"
 jupyter labextension install pylantern > /dev/null 2>&1 || echo "Extension failed to install: pylantern"
 jupyter labextension install bqplot > /dev/null 2>&1 || echo "Extension failed to install: bqplot"
