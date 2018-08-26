@@ -10,6 +10,7 @@ jupyterlab_iframe
 jupyterlab_templates
 nbdime
 nbresuse
+papermill
 perspective-python
 plotly
 pylantern
