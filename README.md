@@ -6,6 +6,7 @@ my jupyterlab build
 - @jupyter-widgets/jupyterlab-manager
 - @jupyter-widgets/jupyterlab-sidecar
 - @jupyterlab/celltags
+- @jupyterlab/git
 - @jupyterlab/plotly-extension
 - @jupyterlab/statusbar
 - @jupyterlab/toc
