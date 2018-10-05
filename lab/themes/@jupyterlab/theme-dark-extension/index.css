@@ -337,6 +337,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Vega extension styles */
 
   --jp-vega-background: var(--md-grey-400);
+
+  /* Sidebar-related styles */
+
+  --jp-sidebar-min-width: 300px;
 }
 
 /*-----------------------------------------------------------------------------

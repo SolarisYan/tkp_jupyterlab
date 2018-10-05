@@ -337,6 +337,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Vega extension styles */
 
   --jp-vega-background: var(--md-grey-400);
+
+  /* Sidebar-related styles */
+
+  --jp-sidebar-min-width: 300px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -2227,7 +2231,7 @@ button.jp-mod-styled.jp-mod-warn {
 
 #jp-left-stack > .p-Widget,
 #jp-right-stack > .p-Widget {
-  min-width: 300px;
+  min-width: var(--jp-sidebar-min-width);
 }
 
 #jp-right-stack {
