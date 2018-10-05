@@ -16,8 +16,9 @@ my jupyterlab build
 - beakerx_table-jupyterlab
 - bqplot
 - ipyannotate
+- ipyevents
 - ipysheet
-- ipyvolume
+- ipyvolumei
 - jupyter-leaflet
 - jupyter-threejs
 - jupyterlab-drawio
@@ -28,6 +29,8 @@ my jupyterlab build
 - jupyterlab_email
 - jupyterlab_iframe
 - jupyterlab_templates
+- jupyterlab_tensorboard
+- lineup_widget
 - plotlywidget
 - pylantern
 - qgrid

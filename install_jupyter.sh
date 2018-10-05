@@ -16,6 +16,7 @@ EXTENSIONS="
 beakerx_table-jupyterlab
 bqplot
 ipyannotate
+ipyevents
 ipysheet
 ipyvolume
 jupyter-leaflet
@@ -28,6 +29,8 @@ jupyterlab_commands
 jupyterlab_email
 jupyterlab_iframe
 jupyterlab_templates
+jupyterlab_tensorboard
+lineup_widget
 plotlywidget
 pylantern
 qgrid
@@ -48,3 +51,4 @@ jupyter serverextension enable --py jupyterlab_email
 jupyter serverextension enable --py jupyterlab_git
 jupyter serverextension enable --py jupyterlab_templates
 jupyter serverextension enable --py nbresuse
+jupyter serverextension enable --py jupyter_tensorboard
