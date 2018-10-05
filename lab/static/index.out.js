@@ -1547,6 +1547,41 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
+    if (isDisabled('jupyterlab_tensorboard')) {
+      disabled.matches.push('jupyterlab_tensorboard');
+    } else {
+      module = require('jupyterlab_tensorboard/');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
     if (isDisabled('bqplot')) {
       disabled.matches.push('bqplot');
     } else {
@@ -1862,6 +1897,41 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
+    if (isDisabled('ipyevents')) {
+      disabled.matches.push('ipyevents');
+    } else {
+      module = require('ipyevents/lib/plugin');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
     if (isDisabled('pylantern')) {
       disabled.matches.push('pylantern');
     } else {
@@ -2146,6 +2216,41 @@ function main() {
       disabled.matches.push('jupyter-threejs');
     } else {
       module = require('jupyter-threejs/src/jupyterlab-plugin');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('lineup_widget')) {
+      disabled.matches.push('lineup_widget');
+    } else {
+      module = require('lineup_widget/lib/labplugin');
       extension = module.default;
 
       // Handle CommonJS exports.

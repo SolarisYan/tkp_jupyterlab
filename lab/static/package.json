@@ -111,6 +111,7 @@
         "@jupyterlab/plotly-extension": "file:../extensions/jupyterlab-plotly-extension-0.17.1.tgz",
         "@jupyter-widgets/jupyterlab-manager": "file:../extensions/jupyter-widgets-jupyterlab-manager-0.37.2.tgz",
         "ipyvolume": "file:../extensions/ipyvolume-0.4.6.tgz",
+        "jupyterlab_tensorboard": "file:../extensions/jupyterlab_tensorboard-0.1.4.tgz",
         "bqplot": "file:../extensions/bqplot-0.4.1.tgz",
         "qgrid": "file:../extensions/qgrid-1.1.1.tgz",
         "@jupyterlab/git": "file:../extensions/jupyterlab-git-0.2.2.tgz",
@@ -120,6 +121,7 @@
         "jupyterlab_iframe": "file:../extensions/jupyterlab_iframe-0.1.8-b91f9bf3e966f8abf98ed80aa1e0392497486f54.tgz",
         "jupyterlab_autoversion": "file:../extensions/jupyterlab_autoversion-0.0.2-a21b93f186264d31c96280487ac44accbea61417.tgz",
         "@oriolmirosa/jupyterlab_materialdarker": "file:../extensions/oriolmirosa-jupyterlab_materialdarker-0.3.6.tgz",
+        "ipyevents": "file:../extensions/ipyevents-1.3.1.tgz",
         "pylantern": "file:../extensions/pylantern-0.1.0-a42c0850033da5bfbdcc4ee9d143e78ec1c678eb.tgz",
         "jupyterlab_templates": "file:../extensions/jupyterlab_templates-0.1.12.tgz",
         "@jpmorganchase/perspective-jupyterlab": "file:../extensions/jpmorganchase-perspective-jupyterlab-0.2.0-beta.1-b5b13ecd91a1c7f842aac533c28e047034e9560f.tgz",
@@ -128,7 +130,8 @@
         "jupyter-leaflet": "file:../extensions/jupyter-leaflet-0.9.0.tgz",
         "@jupyter-widgets/jupyterlab-sidecar": "file:../extensions/jupyter-widgets-jupyterlab-sidecar-0.3.0.tgz",
         "jupyterlab_commands": "file:../extensions/jupyterlab_commands-0.0.4.tgz",
-        "jupyter-threejs": "file:../extensions/jupyter-threejs-1.1.0.tgz"
+        "jupyter-threejs": "file:../extensions/jupyter-threejs-1.1.0.tgz",
+        "lineup_widget": "file:../extensions/lineup_widget-1.0.2.tgz"
     },
     "devDependencies": {
         "@jupyterlab/buildutils": "^0.9.4",
@@ -188,6 +191,7 @@
             "beakerx_table-jupyterlab": "dist/index.js",
             "@jupyter-widgets/jupyterlab-manager": "",
             "ipyvolume": "src/labplugin",
+            "jupyterlab_tensorboard": "",
             "bqplot": "src/jupyterlab-plugin",
             "qgrid": "src/jupyterlab-plugin",
             "@jupyterlab/git": "",
@@ -197,6 +201,7 @@
             "jupyterlab_iframe": "",
             "jupyterlab_autoversion": "",
             "@oriolmirosa/jupyterlab_materialdarker": "",
+            "ipyevents": "lib/plugin",
             "pylantern": "",
             "jupyterlab_templates": "",
             "@jpmorganchase/perspective-jupyterlab": "build/index.js",
@@ -205,7 +210,8 @@
             "jupyter-leaflet": "src/jupyterlab-plugin",
             "@jupyter-widgets/jupyterlab-sidecar": "lib/plugin",
             "jupyterlab_commands": "",
-            "jupyter-threejs": "src/jupyterlab-plugin"
+            "jupyter-threejs": "src/jupyterlab-plugin",
+            "lineup_widget": "lib/labplugin"
         },
         "mimeExtensions": {
             "@jupyterlab/javascript-extension": "",
@@ -270,15 +276,7 @@
             "xterm"
         ],
         "version": "0.34.11",
-        "linkedPackages": {
-            "@jpmorganchase/perspective-jupyterlab": "/Users/theocean154/Programs/projects/perspective/packages/perspective-jupyterlab",
-            "jupyterlab_autoversion": "/Users/theocean154/Programs/projects/jupyterlab_autoversion",
-            "pylantern": "/Users/theocean154/Programs/projects/lantern/jlab",
-            "jupyterlab_email": "/Users/theocean154/Programs/projects/jupyterlab_email",
-            "jupyterlab_iframe": "/Users/theocean154/Programs/projects/jupyterlab_iframe",
-            "beakerx_table-jupyterlab": "/Users/theocean154/Programs/projects/thirdparty/beakerx/js/lab",
-            "ipyannotate": "/Users/theocean154/Programs/projects/thirdparty/ipyannotate/js"
-        },
+        "linkedPackages": {},
         "staticDir": "../static"
     }
 }
