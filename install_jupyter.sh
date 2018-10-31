@@ -25,6 +25,7 @@ jupyterlab-drawio
 jupyterlab-kernelspy
 jupyterlab_autoversion
 jupyterlab_bokeh
+jupyterlab-chart-editor
 jupyterlab_commands
 jupyterlab_email
 jupyterlab_iframe
