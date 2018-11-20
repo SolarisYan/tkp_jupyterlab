@@ -198,6 +198,18 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color3: var(--md-grey-400);
   --jp-layout-color4: var(--md-grey-600);
 
+  /* Inverse Layout
+   *
+   * The following are the inverse layout colors use in JupyterLab. In a light
+   * theme these would go from dark to light.
+   */
+
+  --jp-inverse-layout-color0: #111111;
+  --jp-inverse-layout-color1: var(--md-grey-900);
+  --jp-inverse-layout-color2: var(--md-grey-800);
+  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color4: var(--md-grey-600);
+
   /* Brand/accent */
 
   --jp-brand-color0: var(--md-blue-700);
@@ -311,14 +323,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-number-color: #080;
   --jp-mirror-editor-def-color: #00f;
   --jp-mirror-editor-variable-color: var(--md-grey-900);
-  --jp-mirror-editor-variable-2-color: var(--md-grey-800);
-  --jp-mirror-editor-variable-3-color: var(--md-grey-700);
+  --jp-mirror-editor-variable-2-color: #05a;
+  --jp-mirror-editor-variable-3-color: #085;
   --jp-mirror-editor-punctuation-color: #05a;
   --jp-mirror-editor-property-color: #05a;
   --jp-mirror-editor-operator-color: #aa22ff;
   --jp-mirror-editor-comment-color: #408080;
   --jp-mirror-editor-string-color: #ba2121;
-  --jp-mirror-editor-string-2-color: #f50;
+  --jp-mirror-editor-string-2-color: #708;
   --jp-mirror-editor-meta-color: #aa22ff;
   --jp-mirror-editor-qualifier-color: #555;
   --jp-mirror-editor-builtin-color: #008000;
@@ -337,7 +349,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Sidebar-related styles */
 
-  --jp-sidebar-min-width: 300px;
+  --jp-sidebar-min-width: 180px;
 }
 
 /*-----------------------------------------------------------------------------

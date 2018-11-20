@@ -1,4 +1,15 @@
 {
     "local_extensions": {
+        "jupyterlab_iframe": "/Users/theocean154/Programs/projects/jupyterlab_iframe",
+        "pylantern": "/Users/theocean154/Programs/projects/lantern/jlab",
+        "jupyterlab_celltests": "/Users/theocean154/Programs/projects/jupyterlab_celltests",
+        "jupyterlab_autoversion": "/Users/theocean154/Programs/projects/jupyterlab_autoversion",
+        "jupyterlab_commands": "/Users/theocean154/Programs/projects/jupyterlab_commands",
+        "jupyterlab_email": "/Users/theocean154/Programs/projects/jupyterlab_email",
+        "jupyterlab_templates": "/Users/theocean154/Programs/projects/jupyterlab_templates",
+        "knowledgelab": "/Users/theocean154/Programs/projects/knowledgelab/jlab",
+        "@jpmorganchase/perspective-jupyterlab": "/Users/theocean154/Programs/projects/perspective/packages/perspective-jupyterlab",
+        "jupyterlab_filetree": "/Users/theocean154/Programs/projects/thirdparty/jupyterlab_filetree",
+        "beakerx_table-jupyterlab": "/Users/theocean154/Programs/projects/thirdparty/beakerx/js/lab"
     }
 }

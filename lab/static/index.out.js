@@ -285,6 +285,76 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
+    if (isDisabled('jupyterlab-chart-editor')) {
+      disabled.matches.push('jupyterlab-chart-editor');
+    } else {
+      var module = require('jupyterlab-chart-editor/');
+      var extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          mimeExtensions.push(plugin);
+        });
+      } else {
+        mimeExtensions.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('jupyterlab_bokeh')) {
+      disabled.matches.push('jupyterlab_bokeh');
+    } else {
+      var module = require('jupyterlab_bokeh/');
+      var extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          mimeExtensions.push(plugin);
+        });
+      } else {
+        mimeExtensions.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
     if (isDisabled('@jupyterlab/plotly-extension')) {
       disabled.matches.push('@jupyterlab/plotly-extension');
     } else {
@@ -1267,41 +1337,6 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('@jupyterlab/statusbar')) {
-      disabled.matches.push('@jupyterlab/statusbar');
-    } else {
-      module = require('@jupyterlab/statusbar/');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
     if (isDisabled('@jupyterlab/celltags')) {
       disabled.matches.push('@jupyterlab/celltags');
     } else {
@@ -1372,10 +1407,10 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('jupyterlab-drawio')) {
-      disabled.matches.push('jupyterlab-drawio');
+    if (isDisabled('jupyterlab_filetree')) {
+      disabled.matches.push('jupyterlab_filetree');
     } else {
-      module = require('jupyterlab-drawio/');
+      module = require('jupyterlab_filetree/');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -1411,146 +1446,6 @@ function main() {
       disabled.matches.push('ipyannotate');
     } else {
       module = require('ipyannotate/lib/labplugin');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('beakerx_table-jupyterlab')) {
-      disabled.matches.push('beakerx_table-jupyterlab');
-    } else {
-      module = require('beakerx_table-jupyterlab/dist/index.js');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('@jupyter-widgets/jupyterlab-manager')) {
-      disabled.matches.push('@jupyter-widgets/jupyterlab-manager');
-    } else {
-      module = require('@jupyter-widgets/jupyterlab-manager/');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('ipyvolume')) {
-      disabled.matches.push('ipyvolume');
-    } else {
-      module = require('ipyvolume/src/labplugin');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('jupyterlab_tensorboard')) {
-      disabled.matches.push('jupyterlab_tensorboard');
-    } else {
-      module = require('jupyterlab_tensorboard/');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -1652,10 +1547,10 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('@jupyterlab/git')) {
-      disabled.matches.push('@jupyterlab/git');
+    if (isDisabled('jupyterlab_templates')) {
+      disabled.matches.push('jupyterlab_templates');
     } else {
-      module = require('@jupyterlab/git/');
+      module = require('jupyterlab_templates/');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -1722,10 +1617,10 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('jupyterlab_email')) {
-      disabled.matches.push('jupyterlab_email');
+    if (isDisabled('ipyvolume')) {
+      disabled.matches.push('ipyvolume');
     } else {
-      module = require('jupyterlab_email/');
+      module = require('ipyvolume/lib/labplugin');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -1757,10 +1652,45 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('jupyterlab-kernelspy')) {
-      disabled.matches.push('jupyterlab-kernelspy');
+    if (isDisabled('pylantern')) {
+      disabled.matches.push('pylantern');
     } else {
-      module = require('jupyterlab-kernelspy/lib/plugin');
+      module = require('pylantern/');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('@jupyterlab/git')) {
+      disabled.matches.push('@jupyterlab/git');
+    } else {
+      module = require('@jupyterlab/git/');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -1862,6 +1792,76 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
+    if (isDisabled('beakerx_table-jupyterlab')) {
+      disabled.matches.push('beakerx_table-jupyterlab');
+    } else {
+      module = require('beakerx_table-jupyterlab/dist/index.js');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('jupyterlab_celltests')) {
+      disabled.matches.push('jupyterlab_celltests');
+    } else {
+      module = require('jupyterlab_celltests/');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
     if (isDisabled('@oriolmirosa/jupyterlab_materialdarker')) {
       disabled.matches.push('@oriolmirosa/jupyterlab_materialdarker');
     } else {
@@ -1932,115 +1932,10 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('pylantern')) {
-      disabled.matches.push('pylantern');
+    if (isDisabled('jupyterlab_email')) {
+      disabled.matches.push('jupyterlab_email');
     } else {
-      module = require('pylantern/');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('jupyterlab_templates')) {
-      disabled.matches.push('jupyterlab_templates');
-    } else {
-      module = require('jupyterlab_templates/');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('@jpmorganchase/perspective-jupyterlab')) {
-      disabled.matches.push('@jpmorganchase/perspective-jupyterlab');
-    } else {
-      module = require('@jpmorganchase/perspective-jupyterlab/build/index.js');
-      extension = module.default;
-
-      // Handle CommonJS exports.
-      if (!module.hasOwnProperty('__esModule')) {
-        extension = module;
-      }
-
-      if (Array.isArray(extension)) {
-        extension.forEach(function(plugin) {
-          if (isDeferred(plugin.id)) {
-            deferred.matches.push(plugin.id);
-            ignorePlugins.push(plugin.id);
-          }
-          if (isDisabled(plugin.id)) {
-            disabled.matches.push(plugin.id);
-            return;
-          }
-          register.push(plugin);
-        });
-      } else {
-        register.push(extension);
-      }
-    }
-  } catch (e) {
-    console.error(e);
-  }
-  try {
-    if (isDeferred('')) {
-      deferred.matches.push('');
-      ignorePlugins.push('');
-    }
-    if (isDisabled('jupyterlab_bokeh')) {
-      disabled.matches.push('jupyterlab_bokeh');
-    } else {
-      module = require('jupyterlab_bokeh/');
+      module = require('jupyterlab_email/');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -2107,10 +2002,115 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
+    if (isDisabled('@jupyter-widgets/jupyterlab-manager')) {
+      disabled.matches.push('@jupyter-widgets/jupyterlab-manager');
+    } else {
+      module = require('@jupyter-widgets/jupyterlab-manager/');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
     if (isDisabled('jupyter-leaflet')) {
       disabled.matches.push('jupyter-leaflet');
     } else {
       module = require('jupyter-leaflet/src/jupyterlab-plugin');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('jupyterlab_commands')) {
+      disabled.matches.push('jupyterlab_commands');
+    } else {
+      module = require('jupyterlab_commands/');
+      extension = module.default;
+
+      // Handle CommonJS exports.
+      if (!module.hasOwnProperty('__esModule')) {
+        extension = module;
+      }
+
+      if (Array.isArray(extension)) {
+        extension.forEach(function(plugin) {
+          if (isDeferred(plugin.id)) {
+            deferred.matches.push(plugin.id);
+            ignorePlugins.push(plugin.id);
+          }
+          if (isDisabled(plugin.id)) {
+            disabled.matches.push(plugin.id);
+            return;
+          }
+          register.push(plugin);
+        });
+      } else {
+        register.push(extension);
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  try {
+    if (isDeferred('')) {
+      deferred.matches.push('');
+      ignorePlugins.push('');
+    }
+    if (isDisabled('@jpmorganchase/perspective-jupyterlab')) {
+      disabled.matches.push('@jpmorganchase/perspective-jupyterlab');
+    } else {
+      module = require('@jpmorganchase/perspective-jupyterlab/build/index.js');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -2177,10 +2177,10 @@ function main() {
       deferred.matches.push('');
       ignorePlugins.push('');
     }
-    if (isDisabled('jupyterlab_commands')) {
-      disabled.matches.push('jupyterlab_commands');
+    if (isDisabled('knowledgelab')) {
+      disabled.matches.push('knowledgelab');
     } else {
-      module = require('jupyterlab_commands/');
+      module = require('knowledgelab/');
       extension = module.default;
 
       // Handle CommonJS exports.
@@ -2294,19 +2294,38 @@ function main() {
   // Handle a browser test.
   var browserTest = PageConfig.getOption('browserTest');
   if (browserTest.toLowerCase() === 'true') {
-    var caught_errors = [];
+    var el = document.createElement('div');
+    el.id = 'browserTest';
+    document.body.appendChild(el);
+    el.textContent = '[]';
+    el.style.display = 'none';
+    var errors = [];
+    var reported = false;
+    var timeout = 25000;
+
+    var report = function(errors) {
+      if (reported) {
+        return;
+      }
+      reported = true;
+      el.className = 'completed';
+    }
+
     window.onerror = function(msg, url, line, col, error) {
-      caught_errors.push(String(error));
+      errors.push(String(error));
+      el.textContent = JSON.stringify(errors)
     };
     console.error = function(message) {
-      caught_errors.push(String(message));
+      errors.push(String(message));
+      el.textContent = JSON.stringify(errors)
     };
-    lab.restored.then(function() {
-      var el = document.createElement('div');
-      el.id = 'browserResult';
-      el.textContent = JSON.stringify(caught_errors);
-      document.body.appendChild(el);
-    });
+
+    lab.restored
+      .then(function() { report(errors); })
+      .catch(function(reason) { report([`RestoreError: ${reason.message}`]); });
+
+    // Handle failures to restore after the timeout has elapsed.
+    window.setTimeout(function() { report(errors); }, timeout);
   }
 
 }
