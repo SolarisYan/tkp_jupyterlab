@@ -20,6 +20,7 @@ ipyevents
 ipysheet
 ipyvolume
 jupyter-leaflet
+jupyter-matplotlib
 jupyter-threejs
 jupyterlab-drawio
 jupyterlab-kernelspy
@@ -32,6 +33,7 @@ jupyterlab_iframe
 jupyterlab_templates
 jupyterlab_tensorboard
 lineup_widget
+nbdime-jupyterlab
 plotlywidget
 pylantern
 qgrid
