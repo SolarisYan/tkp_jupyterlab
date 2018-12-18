@@ -1,0 +1,1 @@
+{"argv": ["/usr/local/opt/python/bin/python3.7", "-m", "bash_kernel", "-f", "{connection_file}"], "codemirror_mode": "shell", "display_name": "Bash", "env": {"PS1": "$"}, "language": "bash"}

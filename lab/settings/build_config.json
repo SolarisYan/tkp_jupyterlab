@@ -8,6 +8,8 @@
         "jupyterlab_templates": "/Users/theocean154/Programs/projects/jupyterlab_templates",
         "@jpmorganchase/perspective-jupyterlab": "/Users/theocean154/Programs/projects/perspective/packages/perspective-jupyterlab",
         "jupyterlab_filetree": "/Users/theocean154/Programs/projects/thirdparty/jupyterlab_filetree",
-        "beakerx_table-jupyterlab": "/Users/theocean154/Programs/projects/thirdparty/beakerx/js/lab"
+        "beakerx_table-jupyterlab": "/Users/theocean154/Programs/projects/thirdparty/beakerx/js/lab",
+        "@jupyterlab/runall-extension": "/Users/theocean154/Programs/projects/thirdparty/runall-extension",
+        "jupyterlab_dash": "/Users/theocean154/Programs/projects/thirdparty/jupyterlab-dash"
     }
 }

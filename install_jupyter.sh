@@ -13,6 +13,7 @@ EXTENSIONS="
 @mflevine/jupyterlab_html
 @oriolmirosa/jupyterlab_materialdarker
 @pyviz/jupyterlab_pyviz
+@quentinandre/jupyterlab_snippets
 beakerx_table-jupyterlab
 bqplot
 ipyannotate
@@ -28,6 +29,7 @@ jupyterlab_autoversion
 jupyterlab_bokeh
 jupyterlab-chart-editor
 jupyterlab_commands
+jupyterlab-dash
 jupyterlab_email
 jupyterlab_iframe
 jupyterlab_templates
@@ -52,6 +54,7 @@ jupyter serverextension enable --py jupyterlab_autoversion
 jupyter serverextension enable --py jupyterlab_commands
 jupyter serverextension enable --py jupyterlab_email
 jupyter serverextension enable --py jupyterlab_git
+jupyter serverextension enable --py jupyterlab_snippets
 jupyter serverextension enable --py jupyterlab_templates
 jupyter serverextension enable --py nbresuse
 jupyter serverextension enable --py jupyter_tensorboard
