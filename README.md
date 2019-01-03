@@ -40,5 +40,9 @@ my jupyterlab build
 - pylantern
 - qgrid
 
+## Other
+- py-heat-magic
+- watermark
+
 ## More Extensions
 - https://github.com/mauhai/awesome-jupyterlab
