@@ -25,6 +25,7 @@ jupyter-matplotlib
 jupyter-threejs
 jupyterlab-drawio
 jupyterlab-kernelspy
+jupyterlab-supersave
 jupyterlab_autoversion
 jupyterlab_bokeh
 jupyterlab-chart-editor

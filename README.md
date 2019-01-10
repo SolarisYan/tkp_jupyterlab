@@ -25,6 +25,7 @@ my jupyterlab build
 - jupyter-matplotlib
 - jupyterlab-drawio
 - jupyterlab-kernelspy
+- jupyterlab-supersave
 - jupyterlab_autoversion
 - jupyterlab_bokeh
 - jupyterlab-chart-editor
@@ -46,3 +47,8 @@ my jupyterlab build
 
 ## More Extensions
 - https://github.com/mauhai/awesome-jupyterlab
+- https://github.com/maartenbreddels/jupyterlab-supersave
+- https://github.com/maartenbreddels/ipymaterialui
+- jupyterlab_voyager
+- jupyterlab-monaco
+- jupyterlab_html
