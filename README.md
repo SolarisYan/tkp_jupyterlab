@@ -12,6 +12,7 @@ my jupyterlab build
 - @jupyterlab/toc
 - @mflevine/jupyterlab_html
 - @oriolmirosa/jupyterlab_materialdarker
+- @parente/jupyterlab-quickopen
 - @pyviz/jupyterlab_pyviz
 - @quentinandre/jupyterlab_snippets
 - beakerx_table-jupyterlab
@@ -49,6 +50,7 @@ my jupyterlab build
 - https://github.com/mauhai/awesome-jupyterlab
 - https://github.com/maartenbreddels/jupyterlab-supersave
 - https://github.com/maartenbreddels/ipymaterialui
+- https://github.com/parente/jupyterlab-quickopen
 - jupyterlab_voyager
 - jupyterlab-monaco
 - jupyterlab_html

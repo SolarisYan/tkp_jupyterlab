@@ -8,7 +8,8 @@
       "jupyterlab_templates.extension": true,
       "jupyterlab_commands.extension": true,
       "jupyterlab_email.extension": true,
-      "jupyter_tensorboard": true
+      "jupyter_tensorboard": true,
+      "jupyterlab_git": true
     }
   }
 }

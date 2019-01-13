@@ -12,6 +12,7 @@ EXTENSIONS="
 @jupyterlab/toc
 @mflevine/jupyterlab_html
 @oriolmirosa/jupyterlab_materialdarker
+@parente/jupyterlab-quickopen
 @pyviz/jupyterlab_pyviz
 @quentinandre/jupyterlab_snippets
 beakerx_table-jupyterlab
@@ -55,6 +56,7 @@ jupyter serverextension enable --py jupyterlab_autoversion
 jupyter serverextension enable --py jupyterlab_commands
 jupyter serverextension enable --py jupyterlab_email
 jupyter serverextension enable --py jupyterlab_git
+jupyter serverextension enable --py jupyterlab_quickopen
 jupyter serverextension enable --py jupyterlab_snippets
 jupyter serverextension enable --py jupyterlab_templates
 jupyter serverextension enable --py nbresuse
